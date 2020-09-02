@@ -9,10 +9,14 @@ namespace PokeBattle
         private string _energy;
         private float _multiply;
 
-        public Weakness(string _energy, int _multiply)
+        public Attacks(string _energy, float _multiply)
         {
             this._energy = _energy;
             this._multiply = _multiply;
+        }
+        public string Energy
+        {
+            get { return this._energy; }
         }
     }
 }

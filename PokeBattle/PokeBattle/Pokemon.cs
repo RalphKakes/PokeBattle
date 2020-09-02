@@ -4,20 +4,20 @@ using System.Text;
 
 namespace PokeBattle
 {
-    class Pokemon
+     class Pokemon
     {
         private string _name;
         private string _energy;
         private int _hitpoints;
-        private List<Weakness> _weaknesses;
         private Weakness _weakness;
-        public Pokemon(string _name, string _energy, int _hitpoints, Weakness _weakness, List<Weakness> _weaknesses )
+        private Resistance _resistance;
+        public Pokemon(string _name, string _energy, int _hitpoints, Weakness _weakness, Resistance _resistance)
         {
             this._name = _name;
             this._energy = _energy;
             this._hitpoints = _hitpoints;
             this._weakness = _weakness;
-            this._weaknesses = _weaknesses;
+            this._resistance = _resistance;
 
         }
         public string Name

@@ -6,9 +6,10 @@ namespace PokeBattle
     {
         static void Main(string[] args)
         {
-            Pokemon Pikachu = new Pokemon("Pikachu", "Electric", 60);
-            Console.WriteLine(Pikachu.Name + " is from type:" + Pikachu.Energy + " and has" + Pikachu.Hitpoints);
-            Console.WriteLine(Pikachu.Energy);
+            //var pikachu = new Pokemon("Pikachu", "Electric", 60, new Weakness("ground", 1));
+            var pikachu = new Pikachu("Pik", pikachu.Energy, pikachu.hitpoints, pikachu.weakness, pikachu.resistance);
+            //var charm = new Pokemon("")
+            //Console.WriteLine(pikachu.Name + " is from type:" + pikachu.Energy + " and has" + pikachu.Hitpoints);
         }
     }
 }
