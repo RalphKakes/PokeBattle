@@ -6,17 +6,28 @@ namespace PokeBattle
 {
     class Attacks
     {
-        private string _energy;
-        private float _multiply;
+        private string _name;
+        private float _attackPoints;
+        private string _energyType;
 
-        public Attacks(string _energy, float _multiply)
+        public Attacks(string name, float attackPoints, string energyType)
         {
-            this._energy = _energy;
-            this._multiply = _multiply;
+            this._name = name;
+            this._attackPoints = attackPoints;
+            this._energyType = energyType;
         }
-        public string Energy
+
+        public string Name
         {
-            get { return this._energy; }
+            get { return this._name; }
+        }
+        public float AttackPoints
+        {
+            get { return this._attackPoints; }
+        }
+        public string EnergyType
+        {
+            get { return this._energyType; }
         }
     }
 }
