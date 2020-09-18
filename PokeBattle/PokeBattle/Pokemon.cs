@@ -17,7 +17,7 @@ namespace PokeBattle
             this._name = _name;
             this._energy = _energy;
             this._hitpoints = _hitpoints;
-            this._attacks = List<Attacks>(attacks);
+            this._attacks = new List<Attacks>(attacks);
             this._weakness = _weakness;
             this._resistance = _resistance;
 
