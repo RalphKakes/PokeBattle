@@ -4,14 +4,20 @@ using System.Text;
 
 namespace PokeBattle
 {
-    class Charmeleon
+    class Charmeleon : Pokemon
     {
-        private string _name;
-        private string _energy = "Fire";
-        private int _hitpoints = 60;
-        private Weakness _weakness = new Weakness("Water", 2f);
-        private Resistance _resistance = new Resistance("Electric", 10f);
+        public Charmeleon(string name) : base(
 
-       
+        name, "Fire", 60,
+        new List<Attacks>() {
+            new Attacks("Head Butt", 10f, "Normal"),
+            new Attacks("Flare", 30f, "Fire")
+        },
+        new Weakness("Water", 2.0f),
+        new Resistance("Ligtning", 10f))
+        {
+
+        }
+
     }
 }
