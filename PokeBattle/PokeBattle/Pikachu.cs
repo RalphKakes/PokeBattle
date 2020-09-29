@@ -9,9 +9,9 @@ namespace PokeBattle
         public Pikachu(string name) : base(
 
         name, "Electric", 60,
-        new List<Attacks>() {
-            new Attacks("Pika Punch", 20f, "Fighting"),
-            new Attacks("Electric Ring", 30f, "Electric")
+        new List<Attack>() {
+            new Attack("Pika Punch", 20, "Fighting"),
+            new Attack("Electric Ring", 30, "Electric")
         },
         new Weakness("Fire", 1.5f),
         new Resistance("Fighting", 20f))
