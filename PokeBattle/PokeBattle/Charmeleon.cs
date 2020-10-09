@@ -10,11 +10,11 @@ namespace PokeBattle
 
         name, "Fire", 60,
         new List<Attack>() {
-            new Attack("Head Butt", 10, "Normal"),
+            new Attack("Head Butt", 10, "Fighting"),
             new Attack("Flare", 30, "Fire")
         },
         new Weakness("Water", 2.0f),
-        new Resistance("Ligtning", 10f))
+        new Resistance("Electric", 10))
         {
 
         }

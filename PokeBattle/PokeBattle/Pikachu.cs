@@ -14,7 +14,7 @@ namespace PokeBattle
             new Attack("Electric Ring", 30, "Electric")
         },
         new Weakness("Fire", 1.5f),
-        new Resistance("Fighting", 20f))
+        new Resistance("Fighting", 20))
         {
 
         }

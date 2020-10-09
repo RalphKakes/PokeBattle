@@ -10,7 +10,10 @@ namespace PokeBattle
             var pika = new Pikachu("Pik");
             var charm = new Charmeleon("Charmeleon");
             Console.WriteLine(pika.Name);
-            pika.performAttack(charm , "Pika Punch");
+            pika.performAttack(charm , "Electric Ring");
+            Console.WriteLine("Charmeleon has : " + charm.Hitpoints + " Hitpoints");
+            charm.performAttack(pika, "Flare");
+            Console.WriteLine("Pikachu has : " + pika.Hitpoints + " Hitpoints");
 
             //var charm = new Pokemon("")
             //Console.WriteLine(pikachu.Name + " is from type:" + pikachu.Energy + " and has" + pikachu.Hitpoints);

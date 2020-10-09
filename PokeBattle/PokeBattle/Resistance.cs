@@ -7,9 +7,9 @@ namespace PokeBattle
     class Resistance
     {
         private string _energyType;
-        private float _damageReduction;
+        private int _damageReduction;
 
-        public Resistance(string energyType, float damageReduction)
+        public Resistance(string energyType, int damageReduction)
         {
             this._energyType = energyType;
             this._damageReduction = damageReduction;
@@ -19,7 +19,7 @@ namespace PokeBattle
         {
             get { return this._energyType; }
         }
-        public float DamageReduction
+        public int DamageReduction
         {
             get { return this._damageReduction; }
         }
